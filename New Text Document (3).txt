@@ -1,0 +1,88 @@
+facebkook : https://www.facebook.com/profile.php?id=61576910395246
+
+telegram : https://t.me/the50to50k
+
+
+pumpfun ca : 3Cvhe7QfzDVv8KvVeQwVfJ4CkUkQ3uLP4mUfrPSdpump
+
+
+solscan wallet :  https://solscan.io/account/4UvswjBgy9zfLTPqtLQjAF123sQ2sVrCdoJxeGXgrRjB
+
+
+🧩 Website structure for "50 to 50K" on Cursor
+🖼 Hero Section
+Background: Blurred clouds or static glitchy crypto chart
+
+Main Image: Folosește imaginea cu fața (deja e meme-tier)
+
+Headline (big & bold):
+
+pgsql
+Copy
+Edit
+$50 TO $50K – PUBLIC RIDE
+Subheadline:
+
+pgsql
+Copy
+Edit
+From rekt to redemption. 1 dev. 1 wallet. $50 start. 50k goal.
+CTA buttons:
+
+[📈 TRACK THE WALLET] → link către Solscan
+
+[🚀 JOIN TELEGRAM] → link grup
+
+[🧾 READ LORE] → scroll la secțiunea de jos
+
+🧾 Section: "The Lore"
+pgsql
+Copy
+Edit
+Crypto rekt me. This is my final attempt — a public journey from $50 to $50,000. 
+Dev wallet will be posted for full transparency and tracking.
+Join the ride or watch from the sidelines.
+Add meme icons next to keywords:
+
+💀 for "rekt"
+
+🔎 for "transparency"
+
+🪙 for "wallet"
+
+📉 to 📈 animation loop if possible
+
+🪙 Section: Wallet Tracker
+Embed a live view of the dev wallet (iframe Solscan, or manual updates)
+
+Show:
+
+Starting Balance: 50$
+
+Goal: 50,000$
+
+% Progress bar
+
+[↗ View on Solscan] button
+
+🫡 Community Section
+Carousel of Telegram comments, memes, or tweets with hype
+
+CTA again: JOIN TELEGRAM, maybe some testimonials or reactions like:
+
+“I’m in for the chaos”
+“Doxxed? Don’t care. This is a vibe.”
+
+🧠 Tech / Transparency Section
+Timeline for token actions
+
+Wallet address posted
+
+Button: [🔍 Verify on-chain]
+
+🧻 Footer
+X link
+
+Telegram
+
+Disclaimer: “This is not financial advice. This is a public experiment in crypto chaos.”

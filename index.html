@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 to 50K - Public Ride</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>$50 TO $50K – PUBLIC RIDE</h1>
+            <p class="subheadline">From rekt to redemption. 1 dev. 1 wallet. $50 start. 50k goal.</p>
+            <div class="cta-buttons">
+                <a href="https://solscan.io/account/4UvswjBgy9zfLTPqtLQjAF123sQ2sVrCdoJxeGXgrRjB" class="btn" target="_blank">
+                    <i class="fas fa-chart-line"></i> TRACK THE WALLET
+                </a>
+                <a href="https://t.me/the50to50k" class="btn" target="_blank">
+                    <i class="fab fa-telegram"></i> JOIN TELEGRAM
+                </a>
+                <a href="#lore" class="btn">
+                    <i class="fas fa-scroll"></i> READ LORE
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lore Section -->
+    <section id="lore" class="lore">
+        <div class="container">
+            <h2>The Lore</h2>
+            <p>
+                <i class="fas fa-skull"></i> Crypto rekt me. This is my final attempt — a public journey from $50 to $50,000.
+                <i class="fas fa-search"></i> Dev wallet will be posted for full transparency and tracking.
+                <i class="fas fa-wallet"></i> Join the ride or watch from the sidelines.
+            </p>
+        </div>
+    </section>
+
+    <!-- Wallet Tracker Section -->
+    <section class="wallet-tracker">
+        <div class="container">
+            <h2>Wallet Tracker</h2>
+            <div class="wallet-stats">
+                <div class="stat">
+                    <h3>Starting Balance</h3>
+                    <p>$50</p>
+                </div>
+                <div class="stat">
+                    <h3>Current Balance</h3>
+                    <p id="currentBalance">Loading...</p>
+                </div>
+                <div class="stat">
+                    <h3>Goal</h3>
+                    <p>$50,000</p>
+                </div>
+                <div class="stat">
+                    <h3>Progress</h3>
+                    <p id="percentageComplete">0%</p>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="wallet-actions">
+                <a href="https://solscan.io/account/4UvswjBgy9zfLTPqtLQjAF123sQ2sVrCdoJxeGXgrRjB" class="btn" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> View on Solscan
+                </a>
+                <button class="btn refresh-btn" onclick="updateWalletInfo()">
+                    <i class="fas fa-sync-alt"></i> Refresh
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community">
+        <div class="container">
+            <h2>Community</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"I'm in for the chaos"</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Doxxed? Don't care. This is a vibe."</p>
+                </div>
+            </div>
+            <div class="social-buttons">
+                <a href="https://t.me/the50to50k" class="btn" target="_blank">
+                    <i class="fab fa-telegram"></i> JOIN TELEGRAM
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61576910395246" class="btn" target="_blank">
+                    <i class="fab fa-facebook"></i> JOIN FACEBOOK
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech/Transparency Section -->
+    <section class="tech">
+        <div class="container">
+            <h2>Tech & Transparency</h2>
+            <div class="wallet-info">
+                <p>Wallet Address: 4UvswjBgy9zfLTPqtLQjAF123sQ2sVrCdoJxeGXgrRjB</p>
+                <a href="https://solscan.io/account/4UvswjBgy9zfLTPqtLQjAF123sQ2sVrCdoJxeGXgrRjB" class="btn" target="_blank">
+                    <i class="fas fa-search"></i> Verify on-chain
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61576910395246" target="_blank" title="Join our Facebook Group">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://t.me/the50to50k" target="_blank" title="Join our Telegram Group">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+            <p class="disclaimer">This is not financial advice. This is a public experiment in crypto chaos.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
