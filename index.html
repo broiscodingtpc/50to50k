@@ -125,6 +125,53 @@
         </div>
     </section>
 
+    <!-- FOMO Jumper Game Section -->
+    <section class="fomo-jumper">
+        <div class="container">
+            <h2>FOMO Jumper</h2>
+            <p class="game-description">Jump on green candles to climb higher. Land on a red one and your portfolio crashes. Endless jump madness!</p>
+            <div class="game-container">
+                <canvas id="gameCanvas" width="400" height="600"></canvas>
+                <div class="game-controls">
+                    <button class="btn" id="startGameBtn">
+                        <i class="fas fa-play"></i> Start Game
+                    </button>
+                    <div class="score">Score: <span id="gameScore">0</span></div>
+                </div>
+                <div class="controls-wrapper">
+                    <!-- Desktop Controls -->
+                    <div class="desktop-controls">
+                        <div class="control-info">
+                            <p><i class="fas fa-arrow-left"></i> <i class="fas fa-arrow-right"></i> Move</p>
+                            <p><i class="fas fa-arrow-up"></i> or <i class="fas fa-space"></i> Jump</p>
+                            <p><i class="fas fa-pause"></i> Pause</p>
+                        </div>
+                    </div>
+                    <!-- Mobile Controls -->
+                    <div class="mobile-controls">
+                        <div class="control-buttons">
+                            <button class="control-btn left-btn" id="leftBtn">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+                            <button class="control-btn right-btn" id="rightBtn">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div class="jump-button">
+                            <button class="control-btn jump-btn" id="jumpBtn">
+                                <i class="fas fa-arrow-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="leaderboard-container">
+                    <h3>Leaderboard</h3>
+                    <div id="leaderboardList" class="leaderboard-list"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -140,6 +187,77 @@
         </div>
     </footer>
 
+    <!-- Game Scripts -->
+    <script src="game.js"></script>
     <script src="script.js"></script>
+    <script>
+        // Add event listeners when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, setting up game...');
+            
+            // Start game button
+            const startGameBtn = document.getElementById('startGameBtn');
+            if (startGameBtn) {
+                console.log('Start button found, adding click listener');
+                startGameBtn.addEventListener('click', function() {
+                    console.log('Start button clicked');
+                    if (typeof window.startGame === 'function') {
+                        window.startGame();
+                    } else {
+                        console.error('startGame function not found!');
+                    }
+                });
+            } else {
+                console.error('Start button not found!');
+            }
+            
+            // Mobile controls
+            const leftBtn = document.getElementById('leftBtn');
+            const rightBtn = document.getElementById('rightBtn');
+            const jumpBtn = document.getElementById('jumpBtn');
+            
+            if (leftBtn) {
+                leftBtn.addEventListener('mousedown', () => moveLeft = true);
+                leftBtn.addEventListener('mouseup', () => moveLeft = false);
+                leftBtn.addEventListener('touchstart', () => moveLeft = true);
+                leftBtn.addEventListener('touchend', () => moveLeft = false);
+            }
+            
+            if (rightBtn) {
+                rightBtn.addEventListener('mousedown', () => moveRight = true);
+                rightBtn.addEventListener('mouseup', () => moveRight = false);
+                rightBtn.addEventListener('touchstart', () => moveRight = true);
+                rightBtn.addEventListener('touchend', () => moveRight = false);
+            }
+            
+            if (jumpBtn) {
+                jumpBtn.addEventListener('click', function() {
+                    if (typeof window.jump === 'function') {
+                        window.jump();
+                    } else {
+                        console.error('jump function not found!');
+                    }
+                });
+                jumpBtn.addEventListener('mousedown', function() {
+                    if (typeof window.jump === 'function') {
+                        window.jump();
+                    }
+                });
+                jumpBtn.addEventListener('touchstart', function() {
+                    if (typeof window.jump === 'function') {
+                        window.jump();
+                    }
+                });
+            }
+            
+            // Initialize game
+            console.log('Initializing game...');
+            if (typeof initGame === 'function') {
+                initGame();
+            } else {
+                console.error('initGame function not found!');
+            }
+        });
+    </script>
 </body>
 </html> 

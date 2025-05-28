@@ -640,4 +640,180 @@ footer::before {
     text-align: center;
     color: #dc3545;
     padding: 20px;
+}
+
+/* FOMO Jumper Game Styles */
+.fomo-jumper {
+    background-color: #1a1a1a;
+    padding: 60px 0;
+    color: white;
+}
+
+.game-description {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+.controls-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Desktop Controls */
+.desktop-controls {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.control-info {
+    color: white;
+    font-size: 1.1em;
+}
+
+.control-info p {
+    margin: 10px 0;
+}
+
+.control-info i {
+    margin: 0 5px;
+    color: #4CAF50;
+}
+
+/* Mobile Controls */
+.mobile-controls {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.control-buttons {
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.control-btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(33, 150, 243, 0.8);
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    color: white;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+}
+
+.control-btn:active {
+    background: rgba(33, 150, 243, 1);
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.jump-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.jump-btn {
+    width: 80px;
+    height: 80px;
+    background: rgba(76, 175, 80, 0.8);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.jump-btn:active {
+    background: rgba(76, 175, 80, 1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .desktop-controls {
+        display: none;
+    }
+    
+    .mobile-controls {
+        display: block;
+    }
+    
+    .game-container {
+        padding-bottom: 120px;
+    }
+}
+
+/* Game Container */
+.game-container {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#gameCanvas {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal h3 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.modal input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.modal button {
+    margin-top: 20px;
 } 
